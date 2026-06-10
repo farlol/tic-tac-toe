@@ -24,6 +24,10 @@ The entire game is a single self-contained file (`tictactoe.html`) with inline C
 
 **Flow:** `handleClick` → mutates `board` → calls `render` → updates DOM. Win detection (`checkWin`) runs after every move against the hardcoded `WINS` array of winning index triplets.
 
+## Claude Code settings
+
+`.claude/settings.local.json` contains pre-approved permissions for Claude Code so common operations (opening the file in a browser, git commands, GitHub MCP calls) don't prompt for confirmation each time.
+
 ## Git
 
 Remote is `git@github.com:farlol/tic-tac-toe.git`. SSH key in use: `~/.ssh/gatr_key`.
